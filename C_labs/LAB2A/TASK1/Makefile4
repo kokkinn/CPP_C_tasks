@@ -1,0 +1,9 @@
+vpath %.c ../src
+vpath %.h ../include
+OBJS = main.o func.o print.o
+NAME = result_make
+$(NAME): $(OBJS)
+	$(CC) $^ -o $@
+$(OBJS): defs.h func.h print.h
+clean:
+	rm $(OBJS) $(NAME)

@@ -12,7 +12,7 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 
 # Recycle Bin used on file shares
-$RECYCLE.BIN/
+# $RECYCLE.BIN/
 
 # Windows Installer files
 *.cab
@@ -531,7 +531,7 @@ qrc_*.cpp
 ui_*.h
 *.qmlc
 *.jsc
-Makefile*
+# Makefile*
 *build-*
 *.qm
 *.prl

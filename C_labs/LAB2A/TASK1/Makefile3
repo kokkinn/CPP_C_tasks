@@ -1,0 +1,9 @@
+OBJS = main.o func.o print.o 
+NAME = program
+$(NAME) : $(OBJS)
+	$(CC) -o result3_make $(OBJS)	
+$(OBJS): defs.h func.h print.h
+clean:
+	rm $(OBJS)
+
+

@@ -1,0 +1,7 @@
+program: main.o func.o print.o
+	gcc -o result2_make main.o func.o print.o
+main.o func.o print.o: defs.h func.h print.h
+clean:
+	rm *.o
+
+
