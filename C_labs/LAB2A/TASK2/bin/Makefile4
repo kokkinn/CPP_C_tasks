@@ -1,0 +1,19 @@
+#srcPath = /home/prm306/LAB2/TASK2/src
+#includePath = /home/prm306/LAB2/TASK2/include
+# VPATH = src:include
+#vpath %.c ${srcPath}
+#vpath %.h ${includePath}
+
+#vpath %.h ../include
+#vpath %.c ../src
+
+VPATH= ../include: ../src
+FLAGS = -I ../include -I ../src
+OBJS = main.o func.o print.o
+NAME = result_make
+$(NAME): $(OBJS)
+	$(CC) -o $@ $^ 
+$(OBJS): main.c func.c print.c
+	gcc -g $(FLAGS) -c $^ 
+clean:
+	rm $(OBJS) 

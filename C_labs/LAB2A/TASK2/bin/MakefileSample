@@ -1,0 +1,29 @@
+.PHONY: clean
+
+srcPath = home/prm306/LAB2/TASK2/src
+
+headerPath = home/prm306/LAB2/TASK2/src
+
+VPATH = src:include
+
+vpath %.c ${srcPath}
+
+vpath %.h ${headerPath}
+
+OBJS = main.o print.o func.o 
+
+TARGET = program
+
+${TARGET}: ${OBJS}
+	gcc -o program ${OBJS}
+
+main.o: main.c defs.h func.h print.h
+	cc -c $< -o $@
+
+print.o: print.c defs.h
+	cc -c $< -o $@	 
+
+func.o: func.c defs.h
+	cc -c $< -o $@
+clean: 
+	rm -rf ${OBJS} ${TARGET}

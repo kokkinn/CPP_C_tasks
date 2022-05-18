@@ -586,7 +586,7 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
+# [Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
@@ -786,7 +786,7 @@ _pkginfo.txt
 !?*.[Cc]ache/
 
 # Others
-ClientBin/
+# ClientBin/
 ~$*
 *~
 *.dbmdl
@@ -895,7 +895,7 @@ OpenCover/
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
-*.binlog
+# *.binlog
 
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
