@@ -441,7 +441,7 @@ fabric.properties
 
 ##### Eclipse
 .metadata
-bin/
+# bin/
 tmp/
 *.tmp
 *.bak
